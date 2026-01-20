@@ -49,7 +49,6 @@ unset($_SESSION['toast']);
   <?php endif; ?>
 </div>
 
-<!-- button -->
 <div class="d-flex justify-content-end mb-2">
   <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModal">
     + Add New Employee
@@ -57,6 +56,10 @@ unset($_SESSION['toast']);
 </div>
 
 <div class="container mt-3">
+    <form method="GET" action="view.php" class="d-flex mb-3">
+      <input type="text" name="search" class="form-control me-2" placeholder="Search employees...">
+      <button type="submit" class="btn btn-outline-primary">Search</button>
+    </form>
   <table class="table table-striped table-hover">
     <thead>
       <tr>
@@ -180,3 +183,4 @@ unset($_SESSION['toast']);
 
 </body>
 </html>
+
